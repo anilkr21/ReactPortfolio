@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    border: 0;
+    overflow-x: hidden;
+
+}
+body {
+    overflow-x: hidden; /* Prevent horizontal overflow on the entire page */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('../assets/ApercuPro-Bold\ \(1\).ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('../assets/ApercuPro-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('../assets/ApercuPro-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Basetica';
+    src: url('../assets/Basetica-Medium.otf');
+    font-weight: 500;
+}
+
+:root{
+    --gradient: linear-gradient(-45deg, #161618, #313132);
+    --color: #efc862;
+    --line: #505050;
+    --dark-gray: #646464;
+    --gray : #a1a1a1;
+    --rgb : rgba(0, 0, 0, 0.5);
+    color-scheme: dark;
+}
+
+html{
+    font-family: 'Apercu Pro';
+    font-weight: 400;
+    letter-spacing: 1px;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-weight: normal;
+}
+
+.app-styled{
+    display: flex;
+    width: 100%;
+    grid-template-columns: 100px, auto;
+    background: var(--gradient);
+    overflow: hidden;
+}
+
+@media(max-width: 600px){
+   
+    html, body {
+        overflow-x: hidden;
+      }
+
+.app-styled{
+    display: flex;
+    grid-template-columns: 1fr;
+    background: var(--gradient);
+    overflow: hidden
+}
+}
+.dashboard-styled{
+    width: 100%;
+    height: 100vh;
+}
+@import './Sidebar.scss';
+@import './home.scss';
+@import './navbar.scss';
+@import './skills.scss';
+@import './projects.scss';

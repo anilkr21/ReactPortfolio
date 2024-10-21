@@ -1,0 +1,40 @@
+.sidebar-styled{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 1px solid var(--line);
+
+    .menu-btn{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 1;
+        background: var(--line);
+        cursor: pointer;
+    }
+
+    .social{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        gap: 50px;
+        
+        span{
+            transform: rotate(-90deg);
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+    }
+}
+
+@media(max-width: 600px){
+    .sidebar-styled{
+        display: none;
+        height: 0;
+        width: 0;
+    }
+}

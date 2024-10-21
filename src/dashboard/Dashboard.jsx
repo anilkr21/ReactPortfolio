@@ -1,0 +1,40 @@
+import React, { useRef } from 'react';
+import Home from '../scenes/home/Home'
+import Skills from '../scenes/skills/index'
+import Projects from '../scenes/projects'
+import Navbar from '../scenes/global/Navbar';
+
+
+ const Dashboard = () => {
+
+    // Create refs for each section
+    const homeRef = useRef(null);
+    const skillsRef = useRef(null);
+    const projectsRef = useRef(null);
+  
+    const scrollToSection = (sectionRef) => {
+      sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    };
+  
+
+  return (
+    <div className='dashboard-styled'>
+      {/* Pass scroll function and refs to Navbar */}
+      <Navbar scrollToSection={scrollToSection} refs={{ homeRef, skillsRef, projectsRef }} />
+      
+      <div ref={homeRef}>
+        <Home />
+      </div>
+
+      <div ref={skillsRef}>
+        <Skills />
+      </div>
+
+      <div ref={projectsRef}>
+        <Projects />
+      </div>
+    </div>
+  )
+}
+
+export default Dashboard;

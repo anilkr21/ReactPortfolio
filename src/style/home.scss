@@ -1,0 +1,132 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+
+
+
+.home-styled{
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+
+    .home-image{
+        position: absolute;
+        height: 100%;
+        width: 65%;
+        object-fit: cover;
+        z-index: 1;
+    }
+
+    .home-data{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        padding: 50px 50px 125px 50px;
+        z-index: 888;
+
+        .home-data-left{
+            display: flex;
+            flex-direction: column;
+            letter-spacing: 5px;
+
+            .lines{
+                position: relative;
+                width: 60%;
+                height: 2px;
+                margin: 20px 0px;
+                background: var(--dark-gray);
+
+                span{
+                    background: var(--color);
+                    height: 100%;
+                    width: 70%;
+                    position: absolute;
+                }
+            }
+
+            span{
+                font-size: 14px;
+                color: var(--dark-gray);
+                
+                &.active{
+                    color: white;
+                    font-size: normal;
+                }
+
+                &:hover {
+                    color: white;
+                    font-size: normal;
+                }
+            }
+        }
+
+        .home-details-styled{
+            
+            .name-styled{
+                font-family: 'Basetica';
+                letter-spacing: 0.2rem;
+                font-weight: 800;
+                font-size:45px;
+                color: var(--color);
+             }
+
+             p{
+                width: 550px;
+                opacity: 0.65;
+             }
+        }
+       
+
+
+    } 
+}
+}
+
+@media(max-width: 600px){
+    .home-styled{
+        width: 100%;
+        height: 65%;
+        
+        .home-image{
+            position: absolute;
+            height: 75%;
+            width: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .home-data{
+            grid-template-columns: 1fr;
+            padding: 20px 20px 75px 20px;
+        
+        .home-data-left{
+           width: 0;
+           height: 0;
+           display: none;
+        }
+        .home-details-styled{
+            gap: 25px;
+
+            .name-styled{
+                font-size: 40px;
+                line-height: 50px;
+                
+            }
+            p{
+                width: 320px;
+                opacity: 0.65;
+             }
+        }
+
+       
+    }
+        
+    }
+    
+}
