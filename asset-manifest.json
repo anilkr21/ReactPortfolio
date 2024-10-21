@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ReactPortfolio/static/css/main.2703c07e.css",
+    "main.js": "/ReactPortfolio/static/js/main.76d9209f.js",
+    "static/media/bag-01.png": "/ReactPortfolio/static/media/bag-01.2a28779f2ed737054894.png",
+    "static/media/MockWebsite.png": "/ReactPortfolio/static/media/MockWebsite.3b630c74b0c4490ceb65.png",
+    "static/media/MockWebsites.png": "/ReactPortfolio/static/media/MockWebsites.2712508664fab9dd562f.png",
+    "static/media/ApercuPro-Regular.ttf": "/ReactPortfolio/static/media/ApercuPro-Regular.7c77e9a861a7190c54f0.ttf",
+    "static/media/ApercuPro-Medium.ttf": "/ReactPortfolio/static/media/ApercuPro-Medium.9a30717193ce761e8dda.ttf",
+    "static/media/ApercuPro-Bold (1).ttf": "/ReactPortfolio/static/media/ApercuPro-Bold (1).ed76cda37b0f1af96f8a.ttf",
+    "static/media/HtmlWebsite.png": "/ReactPortfolio/static/media/HtmlWebsite.6af4d24a876bc32ce7df.png",
+    "static/media/ReactPng.png": "/ReactPortfolio/static/media/ReactPng.8a5d85593bdd7aa1fd9e.png",
+    "static/media/Basetica-Medium.otf": "/ReactPortfolio/static/media/Basetica-Medium.970869d05aa192d34e30.otf",
+    "static/media/FigmaClone.png": "/ReactPortfolio/static/media/FigmaClone.5b9c64ae99a9b468180a.png",
+    "static/media/React-icon.png": "/ReactPortfolio/static/media/React-icon.89de48cf66a9e2f1cd78.png",
+    "static/media/Bootstrap_logo.png": "/ReactPortfolio/static/media/Bootstrap_logo.a49086c00cc78f93e199.png",
+    "index.html": "/ReactPortfolio/index.html",
+    "main.2703c07e.css.map": "/ReactPortfolio/static/css/main.2703c07e.css.map",
+    "main.76d9209f.js.map": "/ReactPortfolio/static/js/main.76d9209f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2703c07e.css",
+    "static/js/main.76d9209f.js"
+  ]
+}
