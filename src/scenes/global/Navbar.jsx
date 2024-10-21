@@ -35,7 +35,7 @@ function Navbar({ scrollToSection, refs }) {
               <span 
                 key={link.id}
                 className={activeLinkId === link.id ? 'active' : ''}
-                onClick={() => handleLinkClick(link.id)}
+                onClick={() => handleLinkClick(link.id , link.refKey)}
               >
                   {link.name}
               </span>

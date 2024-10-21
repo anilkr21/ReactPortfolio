@@ -1,3 +1,9 @@
+import Mock from '../assets/MockWebsite.png'
+import HTML from '../assets/HtmlWebsite.png';
+import ReactPng from '../assets/ReactPng.png';
+import FigmaPhonepe from '../assets/FigmaClone.png';
+import JsMock from '../assets/MockWebsites.png';
+
 export const projects = [
     {
       id: 9,
@@ -6,7 +12,7 @@ export const projects = [
       description:
         "React admin dashboard application which consists of light and darks mode, 4 different charts, three different dat table pages, FAQ page, Form page, and Calendar integration.",
       image:
-        "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
+      ReactPng,
       tags: [
         "React Js",
         "JavaScript",
@@ -44,26 +50,13 @@ export const projects = [
         webapp: "",
       },
     {
-      id: 10,
-      title: "Job Finding App",
-      date: "Jun 2023 - Jul 2023",
-      description:
-        "A Job Finding App made with React Native, Axios. Users can search for any job coming from API and apply there.",
-      image:
-        "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
-      tags: ["React Native", "JavaScript", "Axios"],
-      category: "android app",
-      github: "https://github.com/rishavchanda/Job-finder-App",
-      webapp: "https://github.com/rishavchanda/Job-finder-App",
-    },
-    {
       id: 4,
       title: "PhonePe Design Clone ",
       date: "Oct 2024",
       description:
         "A Phonepe clone made with Figma.",
       image:
-        "",
+      FigmaPhonepe ,
       tags: ["Figma"],
       category: "figma",
       github: "https://github.com/rishavchanda/Whatsapp-Clone-React-Jshttps://www.figma.com/design/prlQmsQjS7kspKRZlN4LGD/Untitled?node-id=0-1&node-type=canvas&t=nHlkk5Mqd3zy3hXC-0",
@@ -76,7 +69,7 @@ export const projects = [
         description:
           "An Online shopping cart with local api calling functionlity along with Online Bank Transaction website.",
         image:
-          "",
+        JsMock,
         tags: ["JavaScript, HTML, CSS, Bootstrap"],
         category: "HTML",
         github: "https://github.com/anilkr21/javaScriptMockWebsites",
@@ -89,7 +82,7 @@ export const projects = [
         description:
           "A HTML & CSS Mock Website",
         image:
-          "",
+        HTML,
         tags: ["HTML, CSS, Bootstrap"],
         category: "HTML",
         github: "https://github.com/anilkr21/Websites",

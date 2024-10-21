@@ -10,7 +10,7 @@ function Home() {
                 <motion.div 
                   initial={{opacity: 0, x: -100}}
                   animate={{opacity: 1, x: [-50 ,150, 50]}}
-                  transition={{duration: 0.5 , delay: .75}}
+                  transition={{duration: 0.5 , delay: 1.5}}
                   className='home-data-left'
                 >
                   <h4>/01</h4>
@@ -24,8 +24,8 @@ function Home() {
 
                 <motion.div 
                   initial={{opacity: 0, x: 50}}
-                  animate={{opacity: 1, x: [ 40, -100, -5]}}
-                  transition={{duration: 0.5 , delay: .75}}
+                  animate={{opacity: 1, x: [ 50,  -5]}}
+                  transition={{duration: 0.5 , delay: 2}}
                   className='home-details-styled'
                 >
                     <h1 className='name-styled'>Hi, I am <br/>Anil Kumar Gangarapu</h1><br/>

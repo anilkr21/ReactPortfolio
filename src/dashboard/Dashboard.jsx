@@ -13,7 +13,11 @@ import Navbar from '../scenes/global/Navbar';
     const projectsRef = useRef(null);
   
     const scrollToSection = (sectionRef) => {
-      sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+      if (sectionRef && sectionRef.current) {
+        sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        console.error('sectionRef is undefined or not attached to a DOM element');
+      }
     };
   
 

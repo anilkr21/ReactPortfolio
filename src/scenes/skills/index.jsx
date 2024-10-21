@@ -1,7 +1,14 @@
 import React from 'react'
 import { motion, transform} from "framer-motion";
-import Image1 from '../../assets/moon.png';
-
+import Image1 from '../../assets/HTML.png';
+import CSS from '../../assets/css3.png';
+import Boootstrap from '../../assets/Bootstrap_logo.png';
+import JS from '../../assets/Javascript.png';
+import ReactIcon from '../../assets/React-icon.png';
+import PS from '../../assets/Photoshop_CC_icon.png';
+import MuiImage from '../../assets/Logo_material_design.svg.png';
+import Ai from '../../assets/Adobe_Illustrator_CC_icon.png';
+import Figma from '../../assets/figma-app-logo.png';
 
 const cardVariants = {
   offscreen: {
@@ -43,13 +50,14 @@ function Card({ image, hueA, hueB }) {
 }
 const images = [
   [Image1,],
-  ["🍊", ],
-  ["🍋", ],
-  ["🍐", ],
-  ["🍏", ],
-  ["🫐",],
-  ["🍆", ],
-  ["🍇", ],
+  [CSS, ],
+  [Boootstrap, ],
+  [JS, ],
+  [ReactIcon, ],
+  [PS,],
+  [MuiImage, ],
+  [Ai, ],
+  [Figma, ],
 ];
 
 
