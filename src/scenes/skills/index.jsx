@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion, transform} from "framer-motion";
+import { motion, transform, useScroll} from "framer-motion";
 import Image1 from '../../assets/HTML.png';
 import CSS from '../../assets/css3.png';
 import Boootstrap from '../../assets/Bootstrap_logo.png';
@@ -31,6 +31,8 @@ function Card({ image, hueA, hueB }) {
   const background = `linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`;
 
   return (
+ 
+
     <motion.div
       className="card-container"
       initial="offscreen"
@@ -63,17 +65,36 @@ const images = [
 
 
 const skills = () => {
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { scrollYProgress } = useScroll();
+
   return (
-    <div className='skills-styles'>
-        <div className='skills-header'>
-          <h1 >Skills</h1>
-          <h4 >Here are some of my skills on which i have been working on for the past few months.</h4>
-        </div>
-          {images.map(([image, hueA, hueB]) => (
-          <Card image={image} hueA={hueA} hueB={hueB} key={image} />
-        ))}
-          
-    </div>
+  
+      <motion.div id='skills'
+      style={{ scaleX: scrollYProgress }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        
+      >
+        <motion.div 
+        
+          initial={{y: 50}}
+          animate={{ y: [-100 , 0] }}
+          whileInView={{ opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2}}
+        className='skills-styles'   >
+            <div id='skills' className='skills-header'>
+              <h1 >Skills</h1>
+              <h4 >Here are some of my skills on which i have been working on for the past few months.</h4>
+            </div>
+              {images.map(([image, hueA, hueB]) => (
+              <Card image={image} hueA={hueA} hueB={hueB} key={image} />
+            ))}
+              
+        </motion.div>
+        </motion.div>
+   
 
     
   )

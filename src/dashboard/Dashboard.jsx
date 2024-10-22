@@ -3,6 +3,8 @@ import Home from '../scenes/home/Home'
 import Skills from '../scenes/skills/index'
 import Projects from '../scenes/projects'
 import Navbar from '../scenes/global/Navbar';
+import Education from '../scenes/education';
+import Footer from '../scenes/footer/Index';
 
 
  const Dashboard = () => {
@@ -11,6 +13,7 @@ import Navbar from '../scenes/global/Navbar';
     const homeRef = useRef(null);
     const skillsRef = useRef(null);
     const projectsRef = useRef(null);
+    const aboutRef = useRef(null);
   
     const scrollToSection = (sectionRef) => {
       if (sectionRef && sectionRef.current) {
@@ -24,7 +27,7 @@ import Navbar from '../scenes/global/Navbar';
   return (
     <div className='dashboard-styled'>
       {/* Pass scroll function and refs to Navbar */}
-      <Navbar scrollToSection={scrollToSection} refs={{ homeRef, skillsRef, projectsRef }} />
+      <Navbar scrollToSection={scrollToSection} refs={{ homeRef, skillsRef, projectsRef,aboutRef }} />
       
       <div ref={homeRef}>
         <Home />
@@ -37,6 +40,10 @@ import Navbar from '../scenes/global/Navbar';
       <div ref={projectsRef}>
         <Projects />
       </div>
+      <div ref={aboutRef}>
+        <Education />
+      </div>
+      <Footer/>
     </div>
   )
 }

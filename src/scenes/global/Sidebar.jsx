@@ -1,7 +1,7 @@
 import React from 'react';
 import { List } from 'phosphor-react';
 import {motion} from 'framer-motion';
-
+import { Bio } from '../../data/constants';
 const Sidebar = () => {
   return (
     <motion.aside 
@@ -15,9 +15,9 @@ const Sidebar = () => {
       </div>
 
       <div className='social'>
-        <span>Tw</span>
-        <span>In</span>
-        <span>Fb</span>
+        <span  onClick={()=>{ window.open(Bio.github, '_blank');}} >git</span>
+        <span onClick={()=>{ window.open(Bio.linkedin, '_blank');}}>In</span>
+        <span onClick={()=>{ window.open(Bio.insta, '_blank');}}>Inst</span>
       </div>
     </motion.aside>
   )

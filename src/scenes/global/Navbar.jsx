@@ -1,15 +1,17 @@
 import { motion } from 'framer-motion';
 import { List, MagnifyingGlass } from 'phosphor-react';
 import React, { useState } from 'react';
-
+import ResumeDox from "../../assets/Anilkumargangarapu01.pdf.docx"
 
 const links = [
-  {id:1 , name: 'HOME' ,refKey: 'homeRef' },
-  {id:2 , name: 'ABOUT', },
-  {id:3 , name: 'SKILLS' ,  refKey: 'skillsRef'},
-  {id:4 , name: 'WORKS',  refKey: 'projectsRef'},
+  {id:1 , name: 'ABOUT' ,refKey: 'homeRef' },
+  {id:2 , name: 'SKILL' ,  refKey: 'skillsRef'},
+  {id:3 , name: 'PROJECTS',  refKey: 'projectsRef'},
+  {id:4 , name: 'EDUCATION', refKey: 'aboutRef' },
   {id:5 , name: 'DOWNLOAD RESUME'},
 ];
+
+
 
 function Navbar({ scrollToSection, refs }) {
 
@@ -17,7 +19,21 @@ function Navbar({ scrollToSection, refs }) {
 
   const handleLinkClick = (id, refKey) => {
     setActiveLinkId(id);
-    scrollToSection(refs[refKey]);
+    if (id === 5) {
+      handleResumeDownload(); // Trigger resume download
+    } else if (refKey) {
+      scrollToSection(refs[refKey]); // Scroll to section if refKey exists
+    }
+  };
+
+  const handleResumeDownload = () =>{
+
+      window.open(ResumeDox);
+    
+  };
+
+  const handleGetInTouch = () =>{
+    window.location.href = "mailto: anilkumargangarapu01@gmail.com " ;
   };
 
   return (
@@ -42,7 +58,7 @@ function Navbar({ scrollToSection, refs }) {
             ))
             
           }
-          <motion.button className='Button'  whileHover={{ scale: 1.2 }}
+          <motion.button className='Button' onClick={()=>handleGetInTouch()}  whileHover={{ scale: 1.2 }}
              onHoverStart={e => {}}
              onHoverEnd={e => {}}>
             Get in touch

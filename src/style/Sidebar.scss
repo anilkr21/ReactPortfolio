@@ -5,14 +5,15 @@
     align-items: center;
     justify-content: space-between;
     border-right: 1px solid var(--line);
+    z-index: 1000;
 
     .menu-btn{
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        aspect-ratio: 1;
-        background: var(--line);
+        padding: 23px;
+        background: var(--dark-gray);
         cursor: pointer;
     }
 

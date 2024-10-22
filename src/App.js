@@ -27,8 +27,9 @@ function App() {
     <div className="app-styled">
       <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <BrowserRouter>
-        <Navbar />
         <Sidebar />
+        <Navbar />
+       
         <Routes>
           <Route path="/" element={<Dashboard /> } />
           
